@@ -1,0 +1,87 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(43, 43, 43);
+    margin: 0;
+}
+
+.container-slider {
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    margin-top: 100px;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider-item {
+    width: 33%;
+    margin: 0px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, .3);
+    padding: 9px 10px 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.next:hover, .prev:hover {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.next {
+    right: 0px;
+}
+
+.prev {
+    left: 5px;
+}
+
+.transition {
+    transition: 600ms;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+}
+
+.picture-box {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.loadPic {
+    width: 100%;
+    border-radius: 5px;
+    border: white solid 2px;
+}
+
+.content {
+    position: relative;
+}
+
+.fa-times-circle {
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 22px;
+    color: black;
+    padding: 8px;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    border: black solid 1px;
+}
